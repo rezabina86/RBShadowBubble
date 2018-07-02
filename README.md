@@ -9,7 +9,7 @@ Customizable bubble with shadow, corner radius and padding.
 
 ## Screenshot
 
-<img src="https://github.com/rezabina86/RBShadowBubble/blob/master/Example/Sample1.png"/>
+<img src="https://github.com/rezabina86/RBShadowBubble/blob/master/Example/sample1.png"/>
 
 ## Example
 
