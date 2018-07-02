@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RBShadowBubble'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A Bubble with shadow and customizable corner radius and padding.'
 
 # This description is used to generate tags and improve search results.
