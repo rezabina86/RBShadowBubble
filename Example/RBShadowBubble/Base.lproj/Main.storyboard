@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,23 +18,23 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="guf-4p-UPA" customClass="BubbleView" customModule="RBShadowBubble">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guf-4p-UPA" customClass="BubbleView" customModule="RBShadowBubble">
                                 <rect key="frame" x="67" y="342" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="WG2-BD-IpF"/>
+                                    <constraint firstAttribute="height" constant="200" id="yBO-PJ-GHH"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="guf-4p-UPA" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="6Xr-w7-Uiv"/>
-                            <constraint firstItem="guf-4p-UPA" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Y6h-yh-GXz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="guf-4p-UPA" secondAttribute="trailing" id="sCN-ib-tRa"/>
-                            <constraint firstItem="guf-4p-UPA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="yu9-0N-ErW"/>
+                            <constraint firstAttribute="trailing" secondItem="guf-4p-UPA" secondAttribute="trailing" id="4GV-xO-S9d"/>
+                            <constraint firstItem="guf-4p-UPA" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="d4y-BN-dsp"/>
+                            <constraint firstItem="guf-4p-UPA" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="orn-rS-KWK"/>
+                            <constraint firstItem="guf-4p-UPA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="zvO-pu-u29"/>
                         </constraints>
                     </view>
                     <connections>

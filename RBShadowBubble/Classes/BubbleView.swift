@@ -8,17 +8,51 @@
 
 import UIKit
 
-@IBDesignable
 public class BubbleView: UIView {
     
-    @IBInspectable var cornerRadius : CGFloat = 5 {
+    @IBInspectable public var cornerRadius : CGFloat = 5 {
         didSet {
             self.setNeedsDisplay()
             self.setNeedsLayout()
         }
     }
     
-    @IBInspectable var padding : CGFloat = 20 {
+    @IBInspectable public var padding : CGFloat = 20 {
+        didSet {
+            self.setNeedsDisplay()
+            self.setNeedsLayout()
+        }
+    }
+    
+    @IBInspectable public var bubbleBackground : UIColor = UIColor.white {
+        didSet {
+            self.setNeedsDisplay()
+            self.setNeedsLayout()
+        }
+    }
+    
+    @IBInspectable public var borderColor : UIColor = UIColor.black.withAlphaComponent(0.1) {
+        didSet {
+            self.setNeedsDisplay()
+            self.setNeedsLayout()
+        }
+    }
+    
+    @IBInspectable public var shadowColor : UIColor = UIColor.black.withAlphaComponent(0.2) {
+        didSet {
+            self.setNeedsDisplay()
+            self.setNeedsLayout()
+        }
+    }
+    
+    @IBInspectable public var shadowOpacity : Float = 1.0 {
+        didSet {
+            self.setNeedsDisplay()
+            self.setNeedsLayout()
+        }
+    }
+    
+    @IBInspectable public var shadowOffset : CGSize = CGSize(width: 1, height: 1) {
         didSet {
             self.setNeedsDisplay()
             self.setNeedsLayout()
@@ -45,15 +79,15 @@ public class BubbleView: UIView {
         
         let shadowLayer = CALayer()
         shadowLayer.shadowPath = path.cgPath
-        shadowLayer.shadowColor = UIColor.black.withAlphaComponent(0.2).cgColor
-        shadowLayer.shadowOffset = CGSize(width: 1, height: 1)
-        shadowLayer.shadowOpacity = 1.0
+        shadowLayer.shadowColor = self.shadowColor.cgColor
+        shadowLayer.shadowOffset = self.shadowOffset
+        shadowLayer.shadowOpacity = self.shadowOpacity
         self.layer.addSublayer(shadowLayer)
         
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = path.cgPath
-        shapeLayer.fillColor = UIColor.white.cgColor
-        shapeLayer.strokeColor = UIColor.black.withAlphaComponent(0.1).cgColor
+        shapeLayer.fillColor = self.bubbleBackground.cgColor
+        shapeLayer.strokeColor = self.borderColor.cgColor
         self.layer.addSublayer(shapeLayer)
         
     }
