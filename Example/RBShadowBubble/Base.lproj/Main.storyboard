@@ -38,6 +38,9 @@
                             <constraint firstItem="guf-4p-UPA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="yu9-0N-ErW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bubbleView" destination="guf-4p-UPA" id="AkX-5j-4ee"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

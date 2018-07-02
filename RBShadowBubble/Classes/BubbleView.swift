@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class BubbleView: UIView {
+public class BubbleView: UIView {
     
     @IBInspectable var cornerRadius : CGFloat = 5 {
         didSet {
@@ -25,7 +25,7 @@ class BubbleView: UIView {
         }
     }
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         super.draw(rect)
         
         let path = UIBezierPath()
