@@ -1,0 +1,6 @@
+framework module RBShadowBubble {
+  umbrella header "RBShadowBubble-umbrella.h"
+
+  export *
+  module * { export * }
+}

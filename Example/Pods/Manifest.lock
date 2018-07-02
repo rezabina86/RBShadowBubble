@@ -1,0 +1,16 @@
+PODS:
+  - RBShadowBubble (0.1.0)
+
+DEPENDENCIES:
+  - RBShadowBubble (from `../`)
+
+EXTERNAL SOURCES:
+  RBShadowBubble:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RBShadowBubble: 105c2e824c16aeb011b3342c39e24a702bd5ee24
+
+PODFILE CHECKSUM: 6f7096946ae2f5777fb30ca176171716095978f2
+
+COCOAPODS: 1.5.3
