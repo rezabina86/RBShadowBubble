@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/RBShadowBubble.svg?style=flat)](https://cocoapods.org/pods/RBShadowBubble)
 [![Platform](https://img.shields.io/cocoapods/p/RBShadowBubble.svg?style=flat)](https://cocoapods.org/pods/RBShadowBubble)
 
+Customizable bubble with shadow, corner radius and padding.
+
+## Screenshot
+
 ![alt tag](https://github.com/rezabina86/RBShadowBubble/blob/master/Example/Sample1.png)
 ![alt tag](https://github.com/rezabina86/RBShadowBubble/blob/master/Example/Sample2.png)
 
