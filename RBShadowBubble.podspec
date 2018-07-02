@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/rezabina86/RBShadowBubble'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://github.com/rezabina86/RBShadowBubble/blob/master/Example/Sample1.png', 'https://github.com/rezabina86/RBShadowBubble/blob/master/Example/Sample2.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rezabina86' => 'tavakolibina@gmail.com' }
   s.source           = { :git => 'https://github.com/rezabina86/RBShadowBubble.git', :tag => s.version.to_s }
