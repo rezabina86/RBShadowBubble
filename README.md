@@ -14,6 +14,20 @@ Customizable bubble with shadow, corner radius and padding.
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```
+@IBOutlet weak var bubbleView: BubbleView!
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    bubbleView.cornerRadius = 5
+    bubbleView.padding = 25
+    bubbleView.bubbleBackground = UIColor.white
+    bubbleView.borderColor = UIColor.black
+    bubbleView.shadowColor = UIColor.black
+    bubbleView.shadowOpacity = 1.0
+    bubbleView.shadowOffset = CGSize(width: 1, height: 1)
+}
+```
 
 ## Requirements
 
